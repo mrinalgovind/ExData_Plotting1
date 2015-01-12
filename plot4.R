@@ -8,7 +8,7 @@
 plot4 <- function(){
     
     # get data from file
-    data <- getDataForPlot3()
+    data <- getDataForPlot4()
     
     # load the package
     library(datasets)

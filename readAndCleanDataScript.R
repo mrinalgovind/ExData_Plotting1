@@ -5,7 +5,10 @@
 getCleanData <- function(){
     
     # read data from file
-    filedataFiltered <- read.table("./data/household_power_consumption.txt" , header = F, sep = ";", na.strings = "?", nrows = 2880, skip = 66637)
+    
+    totalNumOfRowsToRead = 48 * 60 # 48 hours for 2 days and 60 samples per hour 
+    
+    filedataFiltered <- read.table("./data/household_power_consumption.txt" , header = F, sep = ";", na.strings = "?", nrows = totalNumOfRowsToRead, skip = 66637)
     
     # Add headers
     headers <- read.table("./data/household_power_consumption.txt" , header = T, sep = ";", na.strings = "?", nrows = 1)

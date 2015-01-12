@@ -1,10 +1,10 @@
-## This Script Plots Energy Sub Metering over the day(s) for the dates 01-Feb-2007 to 02-Feb-2007
+## This Script Plots multiple plots related to electricity usage in 2 x 2 fashion for the dates 01-Feb-2007 to 02-Feb-2007
 
 # This script assumes that the data file is in your workspace.
 # also the script uses another script "readAndCleanDataScript.R" (created to add modularity and available in github repo) 
 # to read the data from file and provide clean data frame for plotting purpose. 
 
-## Plots the Global Active Power consumption over the days for the dates 01-Feb-2007 to 02-Feb-2007
+## Plots multiple plots related to electricity usage in 2 x 2 fashion for the dates 01-Feb-2007 to 02-Feb-2007
 plot4 <- function(){
     
     # get data from file
@@ -23,7 +23,7 @@ plot4 <- function(){
     
     # plot1
     plot(data$DateTime,data$Global_active_power,type = "l", col = "black" ,ylab = "Global Active Power", xlab = "dateTime")
-        
+    
     #plot2
     plot(data$DateTime,data$Voltage,type = "l", col = "black" ,ylab = "Voltage", xlab = "dateTime")
     

@@ -7,7 +7,7 @@
 
 ## Plots the Histogram of Global Active Power for the dates 01-Feb-2007 to 02-Feb-2007
 plot1 <- function(){
-
+    
     # get data from file
     data <- getDataForPlot1()
     
